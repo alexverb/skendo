@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Skendo</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('.slides').slidesjs({
+        width: 950,
+        height: 328,
+        play: {
+          auto: true,
+          interval: 4000,
+          restartDelay: 2500
+        },
+        navigation: {
+          active: false
+        },
+        pagination: {
+          active: false
+        },
+        swap: true,
+        effect: {
+          slide: {
+            speed: 1500
+          }
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $('#scroller').fadeIn();
+        } else {
+          $('#scroller').fadeOut();
+        }
+      });
+      $('#scroller').click(function () {
+        $('body,html').animate({scrollTop: 0}, 400); return false;
+      });
+    });
+  </script>
+   
+</head>
+<body>
+
+<div id="header">
+  <div class="container">
+    
+    <div class="margin-right margin-top float-left logo">
+      <a href="index.html" class="type_block">
+        <img src="css/img/logo.png" alt="" width="251" height="68" />
+      </a>
+    </div>
+      
+    <div class="phone float-left padding-top-x2 margin-left">
+      <ul class="small-font gray-text">
+        <li>+7 (842-1) 30-88-84</li>
+        <li class="icq">343-888</li>
+      </ul>
+    </div>
+      
+    <div class="cart grid1 float-right padding-top-x2">
+      <div class="cart-header">
+        <label class="lightblue-text uppercase-text">Корзина:</label>
+        <span class="gray-text">пока что пуста</span>
+      </div>
+      <div class="cart-url">
+        <ul class="special-link">
+          <li><a href="/">Вход</a></li>
+          <li><a href="/">Регистрация</a></li>
+        </ul>
+      </div>
+    </div>  
+    
+    <div class="clearfix"></div>
+    
+    <div class="main-menu clearfix">
+       
+      <ul class="float-left grid4"> 
+        <li><a href="/">Смартфоны</a></li> 
+        <li><a href="/">Планшеты</a></li> 
+        <li><a href="/">Доставка</a></li> 
+        <li><a href="/">Оплата</a></li> 
+        <li><a href="/">Помощь</a></li>
+        <li class="last"><a href="/">Контакты</a></li>
+      </ul>
+        
+      <div class="search grid2 float-right">      
+        <form action="" method="">
+          <label>поиск:</label> 
+          <input type="text" name="keywords" value="Enter keywords here" size="10" maxlength="300" onblur="if(this.value=='') this.value='Enter keywords here'" onfocus="if(this.value =='Enter keywords here' ) this.value=''">
+          <button>go</button>
+        </form>                      
+      </div>
+  
+    </div>
+    
+  </div>
+</div>
+
+<div class="slider margin-bottom">
+  <div class="container">
+    <div class="slides">  
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+    </div>  
+  </div>
+</div>    
+
+<div id="content" class="margin-bottom-x2">
+  <div class="container">
+  
+    <div class="grid2 float-left">
+      
+      <div class="block margin-left-min margin-bottom border-dotted"> 
+        <h3 class="padding-bottom type-block uppercase-text heading">Наши товары</h3>
+        <ul class="categories padding-bottom margin-left-min">
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Кухонные комбайны</a></li>
+          <li><a href="/">Холодильники</a></li>
+          <li><a href="/">Запчасти для автомобилей</a></li>
+          <li><a href="/">Мягкие игрушки</a></li>
+          <li><a href="/">Продукты питания</a></li>
+          <li><a href="/">Автомобили</a></li>
+          <li><a href="/">Чай</a></li>
+        </ul>          
+      </div>
+    
+      <div class="block margin-left-min margin-bottom border-dotted">
+        <h3 class="padding-bottom type-block uppercase-text heading">Товар дня</h3>
+        <div class="product padding-bottom">
+          <div class="product-pic">
+            <img src="css/img/pic1.jpg" alt="" />  
+          </div>
+          <div class="product-info">
+            <span class="product-name">Nokia 1280 Black</span>
+            <div class="product-stars">
+              <img src="css/img/stars.jpg" alt="" width="117" height="19" />
+            </div>
+            <span class="product-price">730 руб.</span>
+            <a href="/" class="float-left product-full">Подробнее</a>
+            <a href="/" class="float-left btn blue">В корзину</a>  
+          </div>
+          <div class="clearfix"></div>
+        </div>            
+      </div>
+      
+    </div>
+    
+    <div class="grid3 float-right">
+      <div class="product-list">  
+        <h3 class="heading uppercase-text padding-bottom type-block dark-text">Новинки</h3>
+        <div class="row-fluid">
+        
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>           
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a> 
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic2.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a>  
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic3.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <div class="float-left btn gray type-block">Нет в наличии</div>
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-right-none margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span> 
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a>  
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="product-list padding-top">
+        <h3 class="heading uppercase-text padding-bottom type-block dark-text">Самые продаваемые</h3>                                      
+        <div class="row-fluid">
+        
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a>  
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a>  
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a>  
+            </div>
+          </div>
+          
+          <div class="span3 float-left product margin-right-none margin-bottom">
+            <div class="product-pic">
+              <img src="css/img/pic1.jpg" alt="" />  
+            </div>
+            <div class="product-info">
+              <div class="product-name type-block">
+                <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+              </div>
+              <span class="product-price">730 руб.</span>
+              <a href="/" class="product-full float-left">Подробнее</a>
+              <a href="/" class="float-left btn blue">В корзину</a> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="clearfix"></div>
+      
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container border-top padding-top-min padding-bottom-x2">
+  
+    <div class="grid3 float-left">
+      <ul class="foot-menu">
+        <li class="active"><a href="/">Главная</a></li>
+        <li><a href="/">Смартфоны</a></li>
+        <li><a href="/">Планшеты</a></li>
+        <li><a href="/">Расширенный поиск</a></li>
+        <li><a href="/">Доставка</a></li>
+        <li><a href="/">Оплата</a></li>
+        <li><a href="/">О магазине</a></li>
+        <li><a href="/">Контактная информация</a></li>
+      </ul>
+      <div class="foot-copy">
+        &laquo;Скендо&raquo;&nbsp;&copy;&nbsp;2013&nbsp;<a href="/">Правовая информация</a>&nbsp;&nbsp;|&nbsp;<a href="/">Правила использования</a>
+      </div>
+    </div>
+    
+    <div class="grid2 float-right"></div>
+  
+  </div>
+</div>
+
+<p id="scroller" class="b-top" style="display: none;"><a href="#top"><span></span>Наверх</a></p>
+
+</body>
+</html>
