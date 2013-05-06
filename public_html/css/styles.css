@@ -147,7 +147,8 @@ em{font-style:italic;}
 /* Categories of goods */
 .categories {line-height: 22px;}
   .categories li {position: relative; list-style: inside disc; color: #b9b5b5;}
-    .categories li a {position: relative; top: -1px;}
+    .categories li:hover {color: #575656;}
+    .categories li a { display: block;}
   
 /* Product */
 .product {}
@@ -178,8 +179,8 @@ em{font-style:italic;}
 .foot-copy {font-size: 70%; color: #858585; padding-top: 30px;}  
   .foot-copy a {font-size: 95%;}
   
-#scroller{bottom:5px;left:50%;position:fixed;z-index:9999;margin-left:-610px; }
-  #scroller a{color:#BBB;font:11px/100% Arial,Helvetica,sans-serif;text-decoration:none;text-transform:uppercase;width:80px;display:block;text-align:center;-moz-transition:all 1s ease 0s;}
+#scroller{bottom:5px;left:50%;position:fixed;z-index:9999;margin-left:-610px;}
+  #scroller a{color:#BBB;font-size:11px;text-decoration:none;text-transform:uppercase;width:80px;display:block;text-align:center;-moz-transition:all 1s ease 0s;}
     #scroller a:hover{color:#000;}
   #scroller span{background:url("img/up-arrow.png") no-repeat scroll center center #DDD;width:80px;height:80px;display:block;margin-bottom:7px; border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;-khtml-border-radius:5px 5px 5px 5px;}
     #scroller a:hover span{background-color:#777;}
@@ -187,7 +188,7 @@ em{font-style:italic;}
     #scroller span::selection{background:#2d5064;color:#fff;}::-moz-selection{background:#2d5064;color:#fff;}
     
 /* Breadcrumbs */
-.breadcrumbs {font-size: 90%; color: #000;}
-  .breadcrumbs a {font-size: 90%; text-decoration: none; color: #000;}
+.breadcrumbs {font-size: 13px; color: #000;}
+  .breadcrumbs a {font-size: 13px; text-decoration: none; color: #000;}
   .breadcrumbs a:hover {color: #2fc7f9;}
-  .breadcrumbs span {font-size: 90%;}
+  .breadcrumbs span {font-size: 13px; color: #2fc7f9;}

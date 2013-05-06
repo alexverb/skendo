@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Skendo</title>
+	<title>Skendo | Продукт</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.slides.min.js"></script>
@@ -45,7 +43,7 @@
         }
       });
       $('#scroller').click(function () {
-        $('body,html').animate({scrollTop: 0}, 700); return false;
+        $('body,html').animate({scrollTop: 0}, 400); return false;
       });
     });
   </script>
@@ -54,63 +52,80 @@
 <body>
 
 <div id="header">
+
   <div class="container">
     
-    <div class="margin-right margin-top float-left logo">
-      <a href="index.html" class="type_block">
-        <img src="css/img/logo.png" alt="" width="251" height="68" />
-      </a>
-    </div>
-      
-    <div class="phone float-left padding-top-x2 margin-left">
-      <ul class="small-font gray-text">
-        <li>+7 (842-1) 30-88-84</li>
-        <li class="icq">343-888</li>
-      </ul>
-    </div>
-      
-    <div class="cart grid1 float-right padding-top-x2">
-      <div class="cart-header">
-        <label class="lightblue-text uppercase-text">Корзина:</label>
-        <span class="gray-text">пока что пуста</span>
+    <div class="grid_2 alpha margin-top">
+      <div class="logo">
+        <a href="index.html" class="type_block">
+          <img src="css/img/logo.png" alt="" width="133" height="68" />
+        </a>
       </div>
-      <div class="cart-url">
-        <ul class="special-link">
-          <li><a href="/">Вход</a></li>
-          <li><a href="/">Регистрация</a></li>
+    </div>
+      
+    <div class="grid_5 padding-top-x2">
+      <div class="phone">
+        <ul class="small-font gray-text">
+          <li>+7 (842-1) 30-88-84</li>
+          <li class="icq">343-888</li>
         </ul>
+      </div>
+    </div>
+      
+    <div class="grid_5 padding-top-x2">
+      <div class="cart float-right">
+        <div class="cart-header">
+          <label class="lightblue-text uppercase-text">Корзина:</label>
+          <span class="gray-text">пуста</span>
+        </div>
+        <div class="cart-url">
+          <ul class="special-link">
+            <li><a href="/">Вход</a></li>
+            <li><a href="/">Регистрация</a></li>
+          </ul>
+        </div>
       </div>
     </div>  
     
     <div class="clearfix"></div>
+  
+  </div>
+  
+  <div class="container">
     
-    <div class="main-menu clearfix">
-       
-      <ul class="float-left grid4"> 
-        <li><a href="/">Смартфоны</a></li> 
-        <li><a href="/">Планшеты</a></li> 
-        <li><a href="/">Доставка</a></li> 
-        <li><a href="/">Оплата</a></li> 
-        <li><a href="/">Помощь</a></li>
-        <li class="last"><a href="/">Контакты</a></li>
-      </ul>
-        
-      <div class="search grid2 float-right">      
-        <form action="" method="">
-          <label>поиск:</label> 
-          <input type="text" name="keywords" value="Enter keywords here" size="10" maxlength="300" onblur="if(this.value=='') this.value='Enter keywords here'" onfocus="if(this.value =='Enter keywords here' ) this.value=''">
-          <button>go</button>
-        </form>                      
+    <div class="main-menu">
+      
+      <div class="grid_9"> 
+        <ul> 
+          <li><a href="/">Смартфоны</a></li> 
+          <li><a href="/">Планшеты</a></li> 
+          <li><a href="/">Доставка</a></li> 
+          <li><a href="/">Оплата</a></li> 
+          <li><a href="/">Помощь</a></li>
+          <li class="last"><a href="/">Контакты</a></li>
+        </ul>
       </div>
+      
+      <div class="grid_3 padding-top-min">  
+        <div class="search float-right">      
+          <form action="" method="">
+            <input type="text" name="keywords" value="Поиск" size="10" maxlength="300" onblur="if(this.value=='') this.value='Поиск'" onfocus="if(this.value =='Поиск' ) this.value=''">
+            <button>Искать</button>
+          </form>                      
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
   
     </div>
     
   </div>
+  
 </div>
 
 <div class="slider margin-bottom">
   <div class="container">
-    <div class="slides">  
+    <div class="slides line">  
       <div>
         <img src="css/img/slide1.jpg" alt="" />
       </div>
@@ -129,14 +144,18 @@
 
 <div class="breadcrumbs margin-top margin-bottom">
   <div class="container">
-     <a href="/">Skendo</a> &raquo; <a href="/">Каталог</a> &raquo; <a href="/">Мобильные телефоны</a> &raquo; <span>Nokia 1280 Black</span>  
+    <div class="grid_12">
+      <a href="/">Skendo</a> &raquo; <a href="/">Каталог</a> &raquo; <a href="/">Мобильные телефоны</a> &raquo; <span>Nokia 1280 Black</span>  
+    </div>
   </div>
+</div>
+
 </div>
 
 <div id="content" class="margin-bottom-x2">
   <div class="container">
   
-    <div class="grid2 float-left">
+    <div class="grid_3">
       
       <div class="block margin-left-min margin-bottom border-dotted"> 
         <h3 class="padding-bottom type-block uppercase-text heading">Наши товары</h3>
@@ -167,15 +186,15 @@
             </div>
             <span class="product-price">730 руб.</span>
             <a href="/" class="float-left product-full">Подробнее</a>
-            <a href="/" class="float-left btn blue">В корзину</a>  
+            <a href="/" class="btn blue float-left">В корзину</a>
+            <div class="clearfix"></div>  
           </div>
-          <div class="clearfix"></div>
         </div>            
       </div>
       
     </div>
     
-    <div class="grid3 float-right">
+    <div class="grid_9">
     
       <div class="container-fluid">
         ляляляля
@@ -191,7 +210,7 @@
 <div id="footer">
   <div class="container border-top padding-top-min padding-bottom-x2">
   
-    <div class="grid3 float-left">
+    <div class="grid_10">
       <ul class="foot-menu">
         <li class="active"><a href="/">Главная</a></li>
         <li><a href="/">Смартфоны</a></li>
@@ -206,8 +225,6 @@
         &laquo;Скендо&raquo;&nbsp;&copy;&nbsp;2013&nbsp;<a href="/">Правовая информация</a>&nbsp;&nbsp;|&nbsp;<a href="/">Правила использования</a>
       </div>
     </div>
-    
-    <div class="grid2 float-right"></div>
   
   </div>
 </div>
