@@ -55,7 +55,7 @@
 
   <div class="container">
     
-    <div class="grid_2 alpha margin-top">
+    <div class="grid-2 alpha margin-top">
       <div class="logo">
         <a href="index.html" class="type_block">
           <img src="css/img/logo.png" alt="" width="133" height="68" />
@@ -63,7 +63,7 @@
       </div>
     </div>
       
-    <div class="grid_5 padding-top-x2">
+    <div class="grid-5 padding-top-x2">
       <div class="phone">
         <ul class="small-font gray-text">
           <li>+7 (842-1) 30-88-84</li>
@@ -72,7 +72,7 @@
       </div>
     </div>
       
-    <div class="grid_5 padding-top-x2">
+    <div class="grid-5 padding-top-x2">
       <div class="cart float-right">
         <div class="cart-header">
           <label class="lightblue-text uppercase-text">Корзина:</label>
@@ -95,7 +95,7 @@
     
     <div class="main-menu">
       
-      <div class="grid_9"> 
+      <div class="grid-9"> 
         <ul> 
           <li><a href="/">Смартфоны</a></li> 
           <li><a href="/">Планшеты</a></li> 
@@ -106,7 +106,7 @@
         </ul>
       </div>
       
-      <div class="grid_3 padding-top-min">  
+      <div class="grid-3 padding-top-min">  
         <div class="search float-right">      
           <form action="" method="">
             <input type="text" name="keywords" value="Поиск" size="10" maxlength="300" onblur="if(this.value=='') this.value='Поиск'" onfocus="if(this.value =='Поиск' ) this.value=''">
@@ -144,7 +144,7 @@
 
 <div class="breadcrumbs margin-top margin-bottom margin-left-x2">
   <div class="container">
-    <a href="/">Skendo</a> &raquo; <a href="/">Каталог</a> &raquo; <a href="/">Мобильные телефоны</a> &raquo; <span>Nokia 1280 Black</span>  
+    <a href="/">Skendo</a> &raquo; <a href="/">Каталог</a> &raquo; <a href="/">Мобильные телефоны</a> &raquo; <span class="lightblue-text">Nokia 1280 Black</span>  
   </div>
 </div>
 
@@ -153,7 +153,7 @@
 <div id="content" class="margin-bottom-x2">
   <div class="container">
   
-    <div class="grid_3">
+    <div class="grid-3">
       
       <div class="block margin-left-min margin-bottom border-dotted"> 
         <h3 class="padding-bottom type-block uppercase-text heading">Наши товары</h3>
@@ -192,7 +192,7 @@
       
     </div>
     
-    <div class="grid_9">
+    <div class="grid-9">
     
       <div class="container-fluid">
       
@@ -228,22 +228,19 @@
               <h2>Kalorik Aqua 2-Slice Toaster - Silver</h2>
               <div class="model padding-bottom-min">[Артикул: 0043]</div>
               <div class="price">
-                <span class="font-bold float-left">900 руб.</span>
-                <span class="font-crossout float-right">1500 руб.</span>
-              </div>
-              <div class="clearfix"></div>  
+                <span class="float-left"><b>900 руб.</b></span>
+                <span class="float-right"><s>1500 руб.</s></span>
+                <div class="clearfix"></div>
+              </div>                
             </div>
             <div class="desc padding-top-min line">
               <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed <b>diam</b> non aliquam neque. Fusce venenatis blandit lorem eu malesuada. Maecenas bibendum, ante sed semper tincidunt, nibh ante condimentum justo, rutrum mattis nulla elit vitae massa. Sed a metus diam, porttitor varius dui. Nullam non leo ut lacus <a href="/">scelerisque</a> sollicitudin quis at orci. Nulla suscipit elementum justo, et pharetra dolor ultricies eu. Donec eget justo nec turpis malesuada dignissim pellentesque ac massa. Donec eu erat nunc. Nunc convallis nisi sed velit sodales vestibulum egestas mattis enim. Quisque placerat ultrices fermentum. Aenean mollis convallis ante, sed faucibus erat tempor non crasre.</p>
               <p>Fusce eu sapien eget dolor <i>sodales tempor</i> eu eget lectus. Proin consequat tellus non velit viverra a tempor nibh tincidunt. Donec elit augue, adipiscing vitae sollicitudin vitae, luctus vitae lectus. In ut tellus ut velit consectetur vulputate. Cras sagittis rutrum mauris, non iaculis turpis ullam.</p>            
             </div>
             <div class="btmurl margin-bottom padding-top-min">
-              <div class="float-left reviews">
-                <a href="/">обзоры</a>
-              </div>
-              <div class="float-right">
-                <a href="/">добавить в корзину</a>
-              </div>                
+              <a href="/" class="reviews margin-right-min float-left">обзоры</a>
+              <a href="/" class="btn blue float-right">В корзину</a>
+              <div class="clearfix"></div>               
             </div>                
           </div>
           
@@ -260,14 +257,16 @@
         <div class="related-prods padding-top">
           <span class="padding-bottom-min type-block uppercase-text heading">Клиенты, которые купили данный товар, смотрели также:</span>
           <div class="related-prods-item alpha">
-            <div class="product-pic">
-              <a href="/" class="type-block"><img src="css/img/pic2.jpg" alt="" /></a>  
-            </div>
-            <div class="product-info">
-              <div class="product-name type-block">
-                  <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+            <a href="/" class="type-block">
+              <div class="product-pic">
+                <img src="css/img/pic2.jpg" alt="" />  
               </div>
-            </div>
+              <div class="product-info">
+                <div class="product-name type-block">
+                    <span>Samsung GT-I9500 Galaxy S IV 16 Гб Black</span>
+                </div>
+              </div>
+            </a>
           </div>
           <div class="related-prods-item">
             <div class="product-pic">
@@ -313,7 +312,7 @@
 <div id="footer">
   <div class="container border-top padding-top-min padding-bottom-x2">
   
-    <div class="grid_10">
+    <div class="grid-10">
       <ul class="foot-menu">
         <li class="active"><a href="/">Главная</a></li>
         <li><a href="/">Смартфоны</a></li>
