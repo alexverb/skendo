@@ -53,7 +53,7 @@ ul{list-style: none;}
 .container-fluid:after{clear:both;}
 
 .margin-none{margin: 0;}
-.padding-min{padding: 15px;}
+.padding-min{padding: 10px;}
 
 .margin-left{margin-left: 25px;}
   .margin-left-x2{margin-left: 50px;}
@@ -167,7 +167,6 @@ button.btn {border: none; cursor: pointer;}
   .product-pic {border: 1px solid #ebebeb; text-align: center; padding: 8px 0;}
     .product-pic.full-image {padding: 0;}         
   .product-info {color: #787878; padding: 8px 0 0 3px; font-size: 14px;}
-    .product-info .product-name {}
     .product-info .product-full {color: #a1a1a1;}
       .product-info .product-full:hover {color: #2fc7f9;}      
     .product-stars {padding: 8px 0;}
