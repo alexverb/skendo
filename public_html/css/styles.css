@@ -10,7 +10,7 @@ tr,img{page-break-inside:avoid;}
 img{max-width:100% !important;}
 a{color: #2fc7f9; font:11px Arial;}
 a:hover, a:focus{text-decoration:none; color: #817a7a;}
-input:focus{outline: none;}
+input:focus,textarea:focus{outline: none;}
 img, a img{outline: none; border: none;}
 .type-block {display: block;}
 .float-left {float: left;}
@@ -105,6 +105,7 @@ ul{list-style: none;}
 
 /* Styles of buttons */
 .btn {padding: 1px 10px; border-radius: 3px; color: #fff; text-decoration: none; font-size: 10px; display: block;}
+button.btn {border: none; cursor: pointer;}  
   .btn:hover {background-color: #0da3e9; color: #fff;}
   .btn.blue {background-color: #0a92d2;}
   .btn.gray {background-color: #999; padding: 1px 9px;}
@@ -135,8 +136,8 @@ ul{list-style: none;}
   
 /* Find */
 .search {}
-  .search input {border: 1px solid #e8e8e7; border-radius: 2px; padding: 3px 0px 3px 6px; color: #a4a4a4; min-height: 7px; width: 130px; font-size: 70%;}
-  .search button {padding: 4px 8px; border-radius: 2px; background-color: #5a5a5a; border: none; color: #fff; font-size: 70%; cursor: pointer; margin-left: 5px;}
+  .search input {border: 1px solid #e8e8e7; border-radius: 2px; padding: 3px 0px 3px 6px; color: #a4a4a4; min-height: 7px; width: 130px; font-size: 11px;}
+  .search button {padding: 4px 8px; border-radius: 2px; background-color: #5a5a5a; border: none; color: #fff; font-size: 11px; cursor: pointer; margin-left: 5px;}
   
 /* Slider */
 .slider {}
@@ -179,10 +180,9 @@ ul{list-style: none;}
   .foot-menu li {list-style: none; float: left; margin-right: 15px;}
     .foot-menu li a {font-size: 12px;}
       .foot-menu li.active a {text-decoration: none;}
-      .foot-menu li a:hover, .foot-menu li.active a {color: #000;}
+      .foot-menu li a:hover, .foot-menu li.active a {color: #000 !important;}
       
-.foot-copy {font-size: 70%; color: #858585; padding-top: 30px;}  
-  .foot-copy a {font-size: 95%;}
+.foot-copy {font-size: 12px; color: #858585; padding-top: 30px;}  
   
 #scroller{bottom:5px;left:50%;position:fixed;z-index:9999;margin-left:-610px;}
   #scroller a{color:#BBB;font-size:11px;text-decoration:none;text-transform:uppercase;width:80px;display:block;text-align:center;-moz-transition:all 1s ease 0s;}
@@ -193,8 +193,8 @@ ul{list-style: none;}
     #scroller span::selection{background:#2d5064;color:#fff;}::-moz-selection{background:#2d5064;color:#fff;}
     
 /* Breadcrumbs */
-.breadcrumbs {font-size: 13px; color: #000; line-height: 12px;}
-  .breadcrumbs a {text-decoration: none; color: #000;}
+.breadcrumbs {font-size: 14px; color: #000; line-height: 12px;}
+  .breadcrumbs a {text-decoration: none; color: #000; font-size: 14px;}
     .breadcrumbs a:hover {color: #2fc7f9;}
   
 /* Page of product */
@@ -237,3 +237,11 @@ ul{list-style: none;}
   .list-product-item .manufacturer, .list-product-item .desc {color: #787878;}
   .list-product-item .desc p {text-indent: 0px;}
   .list-product-item .price {font-size: 11px !important;}
+  
+/* Contact us */
+.contact-form {width: 91%;}
+  .contact-form label {font-size: 11px; font-weight: bold; color: #787878; width: 15%;}
+  .contact-form input[type="text"] {width: 65%; line-height: 14px;}
+  .contact-form input[type="text"], .contact-form textarea {font: 11px Arial; border: 1px solid #d4d4d4; padding: 0 6px; color: #706c56;}
+  .contact-form textarea {resize: none; width: 82%;}
+  .contact-form button {margin-right: 3px; border: none;}
