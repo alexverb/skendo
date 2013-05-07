@@ -168,7 +168,11 @@ button.btn {border: none; cursor: pointer;}
     .product-pic.full-image {padding: 0;}         
   .product-info {color: #787878; padding: 8px 0 0 3px; font-size: 14px;}
     .product-info .product-full {color: #a1a1a1;}
-      .product-info .product-full:hover {color: #2fc7f9;}      
+      .product-info .product-full:hover {color: #2fc7f9;} 
+      .product-info .desc {font-size: 11px; line-height: 15px; height: 30px; overflow: hidden;}  
+      .listing {font-size: 11px; width: 100%; background: #eee; padding: 3px 4px; color: #5a5b5c;} 
+        .listing a {color: #5a5b5c;}   
+        .listing tr {height: 16px;}
     .product-stars {padding: 8px 0;}
     .product-price {text-transform: none; font-weight: bold; color: #000; display: block; padding-bottom: 8px;}           
     
