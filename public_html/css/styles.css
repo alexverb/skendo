@@ -20,10 +20,12 @@ ul{list-style: none;}
 .gray-text {color: #999;}
 .dark-text {color: #333;}
 .lightblue-text {color: #2fc7f9;}
+.red-text {color: #FF0000;}
 .uppercase-text {text-transform: uppercase;}
 .border-dotted {border-bottom: 1px dotted #b4b4b4;}
 .border-top {border-top: 1px solid #e5e5e5;}
 .line{border-bottom: 1px solid #d4d4d4;}
+
 
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {float: left; margin-left: 10px; margin-right: 10px;}
 .grid-1 {width: 60px;}
@@ -43,6 +45,9 @@ ul{list-style: none;}
 .row-fluid{width:100%; *zoom:1;}
 .row-fluid:before, .row-fluid:after{display:table;  line-height:0;  content:"";}
 .row-fluid:after{clear:both;}
+
+.grid-percent-1 {width: 49.5% !important;}
+.grid-percent-2 {width: 78.7% !important;}
 
 .container{margin-right:auto; margin-left:auto; *zoom:1;}
 .container:before, .container:after{display:table; line-height:0; content:"";}
@@ -66,6 +71,7 @@ ul{list-style: none;}
   .margin-right-none{margin-right: 0 !important;}
 
 .margin-top{margin-top:25px;}
+  .margin-top-min{margin-top:15px;}
   .margin-top-x2{margin-top:50px;}
   .margin-top-none{margin-top: 0 !important;}
 
@@ -246,14 +252,6 @@ button.btn {border: none; cursor: pointer;}
   .list-product-item .manufacturer, .list-product-item .desc {color: #787878;}
   .list-product-item .price {font-size: 12px !important;}
   
-/* Contact us */
-form {}
-  form label {font-weight: bold; color: #787878; width: 15%;}
-  form input {width: 20%; line-height: 14px;}
-  form input, form textarea {font: 12px Arial; border: 1px solid #d4d4d4; padding: 0 6px; color: #706c56;}
-  form textarea {resize: none; width: 82%;}
-  form button {margin-right: 3px; border: none;}
-  
 /* Options for product */
 .product-option {}
   .product-option span {}
@@ -270,13 +268,20 @@ form {}
 .bx-controls-direction {display:none;}
 .bx-wrapper .bx-pager a {margin:0 5px; padding:3px;}
 
+/* Styles for form */
+form {line-height: 20px;}
+  form label {width: 20%; font-weight: bold;}
+  form input[type="text"], form input[type="password"], form textarea {border: 1px solid #d4d4d4; padding: 1px; color: #706c56;}  
+  form input[type="text"], form input[type="password"] {line-height: 15px; width: 100%;}
+  form textarea {resize: none; padding: 4px; width: 70%;}
+  form button {border: none;}
+    form button.btn-offset {margin-right: 57px;}
+  .page-login .form-btm {margin-top: 10px;}
+  form .radio {}
+    form .radio input {position: relative; top: 2px; margin-right: 5px;}  
+  form .required {margin-left: 5px;}
+  form .select {width: 50%;}
+
 /* Login Page */
-.page-login {}
-  .page-login .login {width: 49.5%;}
-  .page-login form button {margin-top: 7px;}
-  .login {}
-    .login .login-head {margin: 3px 0px 0px 0px; padding: 10px 20px 8px 20px; background-color: #efefef; border: 1px solid #d4d4d4; border-bottom: 0px; color: #b3b3b3; border-radius: 5px 5px 0px 0px; -moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; -khtml-border-radius: 5px 5px 0px 0px;}
-    .login .login-cont {overflow: hidden; padding: 10px; border: 1px solid #ebebeb; background-color: #fff;  border-radius: 0px 0px 5px 5px; -moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius: 0px 0px 5px 5px; -khtml-border-radius: 0px 0px 5px 5px;}
-      .login form {width: 100%;}
-        .login form label {width: 20%;} 
-        .page-login .login form input {width: 74%;}
+.login .login-head {margin: 3px 0px 0px 0px; padding: 10px 20px 8px 20px; background-color: #efefef; border: 1px solid #d4d4d4; border-bottom: 0px; color: #b3b3b3; border-radius: 5px 5px 0px 0px; -moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; -khtml-border-radius: 5px 5px 0px 0px;}
+    .login .login-cont {overflow: hidden; padding: 20px 10px; border: 1px solid #ebebeb; background-color: #fff;  border-radius: 0px 0px 5px 5px; -moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius: 0px 0px 5px 5px; -khtml-border-radius: 0px 0px 5px 5px;}
