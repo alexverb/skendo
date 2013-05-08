@@ -1,14 +1,14 @@
 /* Common styles */
 * {margin: 0; padding: 0;}
 html {font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family:Arial, sans-serif;}
-body {padding:0; margin:0; background-color:#fff; font-size: 11px;}
+body {padding:0; margin:0; background-color:#fff; font-size: 12px;}
 
 .clearfix{clear:both; overflow: hidden; visibility: hidden; width: 0; height: 0; display: block; margin: 0; padding: 0;}
 .hide{display:none;}
 a:hover, a:active{outline:0;}
 tr,img{page-break-inside:avoid;}
 img{max-width:100% !important;}
-a{color: #2fc7f9; font:11px Arial;}
+a{color: #2fc7f9; font:12px Arial;}
 a:hover, a:focus{text-decoration:none; color: #817a7a;}
 input:focus,textarea:focus, select:focus{outline: none;}
 img, a img{outline: none; border: none;}
@@ -142,13 +142,12 @@ button.btn {border: none; cursor: pointer;}
   
 /* Find */
 .search {}
-  .search input {border: 1px solid #e8e8e7; border-radius: 2px; padding: 3px 0px 3px 6px; color: #a4a4a4; min-height: 7px; width: 130px; font-size: 11px;}
-  .search button {padding: 4px 8px; border-radius: 2px; background-color: #5a5a5a; border: none; color: #fff; font-size: 11px; cursor: pointer; margin-left: 5px;}
+  .search form {width: 100%;}
+  .search input {border: 1px solid #e8e8e7; border-radius: 2px; padding: 3px 0px 3px 6px; color: #a4a4a4; min-height: 7px; width: 130px; font-size: 12px;}
+  .search button {padding: 4px 8px; border-radius: 2px; background-color: #5a5a5a; border: none; color: #fff; font-size: 12px; cursor: pointer; margin-left: 5px;}
   
 /* Slider */
 .slider {}
-
-.block {width: 90%;}
 
 /* Style for head of block */
 .heading {padding-left: 5px; font-size: 14px !important; font-weight: 100;}
@@ -159,7 +158,7 @@ button.btn {border: none; cursor: pointer;}
 .categories {line-height: 22px;}
   .categories li {position: relative; list-style: inside disc; color: #b9b5b5;}
     .categories li:hover {color: #575656;}
-    .categories li a {display: block; color: #787878;}
+    .categories li a {color: #787878;}
   
 /* Product */
 .product {}
@@ -169,8 +168,8 @@ button.btn {border: none; cursor: pointer;}
   .product-info {color: #787878; padding: 8px 0 0 3px; font-size: 14px;}
     .product-info .product-full {color: #a1a1a1;}
       .product-info .product-full:hover {color: #2fc7f9;} 
-      .product-info .desc {font-size: 11px; line-height: 15px; height: 30px; overflow: hidden;}  
-      .listing {font-size: 11px; width: 100%; background: #eee; padding: 3px 4px; color: #5a5b5c;} 
+      .product-info .desc {font-size: 12px; line-height: 15px; height: 30px; overflow: hidden;}  
+      .listing {font-size: 12px; width: 100%; background: #eee; padding: 3px 4px; color: #5a5b5c;} 
         .listing a {color: #5a5b5c;}   
         .listing tr {height: 16px;}
     .product-stars {padding: 8px 0;}
@@ -194,7 +193,7 @@ button.btn {border: none; cursor: pointer;}
 .foot-copy {font-size: 12px; color: #858585; padding-top: 30px;}  
   
 #scroller{bottom:5px;left:50%;position:fixed;z-index:9999;margin-left:-610px;}
-  #scroller a{color:#BBB;font-size:11px;text-decoration:none;text-transform:uppercase;width:80px;display:block;text-align:center;-moz-transition:all 1s ease 0s;}
+  #scroller a{color:#BBB;font-size:12px;text-decoration:none;text-transform:uppercase;width:80px;display:block;text-align:center;-moz-transition:all 1s ease 0s;}
     #scroller a:hover{color:#000;}
   #scroller span{background:url("img/up-arrow.png") no-repeat scroll center center #DDD;width:80px;height:80px;display:block;margin-bottom:7px; border-radius:5px 5px 5px 5px;-moz-border-radius:5px 5px 5px 5px;-webkit-border-radius:5px 5px 5px 5px;-khtml-border-radius:5px 5px 5px 5px;}
     #scroller a:hover span{background-color:#777;}
@@ -226,7 +225,7 @@ button.btn {border: none; cursor: pointer;}
   .prods-info-rside .name-price {}
     .prods-info-rside .name-price h2 {font-size: 14px; font-weight: 100;}
     .prods-info-rside .name-price .price {font-size: 14px;}
-      .prods-info-rside .desc p {text-indent: 20px; padding-bottom: 15px; color: #787878;}
+      .prods-info-rside .desc p {padding-bottom: 15px; color: #787878; line-height: 135%;}
         .prods-info-rside .desc p a {text-decoration: none;}
     .prods-info-rside .btmurl .reviews {font-size: 13px; color: #7a7a7a; position: relative; top: -2px;}
       .prods-info-rside .btmurl .reviews:hover {color: #21ccef;}
@@ -245,47 +244,39 @@ button.btn {border: none; cursor: pointer;}
 .list-product-item {border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border: 1px solid #ebebeb;}
   .list-product-item .product-pic {width: 25%;}
   .list-product-item .manufacturer, .list-product-item .desc {color: #787878;}
-  .list-product-item .desc p {text-indent: 0px;}
-  .list-product-item .price {font-size: 11px !important;}
+  .list-product-item .price {font-size: 12px !important;}
   
 /* Contact us */
-.contact-form {width: 90%;}
-  .contact-form label {font-size: 11px; font-weight: bold; color: #787878; width: 15%;}
-  .contact-form input[type="text"] {width: 65%; line-height: 14px;}
-  .contact-form input[type="text"], .contact-form textarea {font: 11px Arial; border: 1px solid #d4d4d4; padding: 0 6px; color: #706c56;}
-  .contact-form textarea {resize: none; width: 82%;}
-  .contact-form button {margin-right: 3px; border: none;}
+form {}
+  form label {font-weight: bold; color: #787878; width: 15%;}
+  form input {width: 20%; line-height: 14px;}
+  form input, form textarea {font: 12px Arial; border: 1px solid #d4d4d4; padding: 0 6px; color: #706c56;}
+  form textarea {resize: none; width: 82%;}
+  form button {margin-right: 3px; border: none;}
   
 /* Options for product */
 .product-option {}
   .product-option span {}
-  .product-option ul li, .product-option ul li select {font-size: 11px !important; color: #787878;}      
+  .product-option ul li, .product-option ul li select {font-size: 12px !important; color: #787878;}      
     .product-option ul li label {margin-right: 5px;}
     
 /* ListPic of product */
-  .bx-wrapper .bx-pager {
-    bottom: -95px;
-  }
-  
-  .bx-pager-item {
-    float: left;
-    margin-top: 7px;
-  }
-  
-  .bx-pager-item img {
-    width: 40px !important; 
-    height: 78px !important;
-  }
-  
-  .bx-pager-item {border: 1px solid #ebebeb; text-align: center; padding: 8px 0; margin-right: 8px;} 
+.bx-wrapper .bx-pager {bottom:-95px;}
+.bx-pager-item {float:left; margin-top:7px; margin-right:8px; border:1px solid #ebebeb; text-align:center; padding:8px 0;}
+  .bx-pager-item img {width:40px !important; height:78px !important;}
   .bx-pager-item:last-child {margin-right:0px;}
-  .bxslider li {width: 188px !important; border: 1px solid #ebebeb; text-align: center; padding: 8px 0;}
-  .bxslider {margin-bottom: 5px;}
-  .bx-controls-direction {
-    display: none;
-  }
-  
-  .bx-wrapper .bx-pager a {
-    margin: 0 5px;
-    padding: 3px;
-  }
+.bxslider {margin-bottom:5px;}
+  .bxslider li {width:188px !important; border:1px solid #ebebeb; text-align:center; padding:8px 0;}
+.bx-controls-direction {display:none;}
+.bx-wrapper .bx-pager a {margin:0 5px; padding:3px;}
+
+/* Login Page */
+.page-login {}
+  .page-login .login {width: 49.5%;}
+  .page-login form button {margin-top: 7px;}
+  .login {}
+    .login .login-head {margin: 3px 0px 0px 0px; padding: 10px 20px 8px 20px; background-color: #efefef; border: 1px solid #d4d4d4; border-bottom: 0px; color: #b3b3b3; border-radius: 5px 5px 0px 0px; -moz-border-radius: 5px 5px 0px 0px; -webkit-border-radius: 5px 5px 0px 0px; -khtml-border-radius: 5px 5px 0px 0px;}
+    .login .login-cont {overflow: hidden; padding: 10px; border: 1px solid #ebebeb; background-color: #fff;  border-radius: 0px 0px 5px 5px; -moz-border-radius: 0px 0px 5px 5px; -webkit-border-radius: 0px 0px 5px 5px; -khtml-border-radius: 0px 0px 5px 5px;}
+      .login form {width: 100%;}
+        .login form label {width: 20%;} 
+        .page-login .login form input {width: 74%;}

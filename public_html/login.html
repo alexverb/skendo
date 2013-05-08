@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Skendo | Авторизация</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('.slides').slidesjs({
+        width: 950,
+        height: 328,
+        play: {
+          auto: true,
+          interval: 4000,
+          restartDelay: 2500
+        },
+        navigation: {
+          active: false
+        },
+        pagination: {
+          active: false
+        },
+        swap: true,
+        effect: {
+          slide: {
+            speed: 1500
+          }
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $('#scroller').fadeIn();
+        } else {
+          $('#scroller').fadeOut();
+        }
+      });
+      $('#scroller').click(function () {
+        $('body,html').animate({scrollTop: 0}, 400); return false;
+      });
+    });
+  </script>
+   
+</head>
+<body>
+
+<div id="header">
+
+  <div class="container">
+    
+    <div class="grid-2 alpha margin-top">
+      <div class="logo">
+        <a href="index.html" class="type_block">
+          <img src="css/img/logo.png" alt="" width="133" height="68" />
+        </a>
+      </div>
+    </div>
+      
+    <div class="grid-5 padding-top-x2">
+      <div class="phone">
+        <ul class="small-font gray-text">
+          <li>+7 (842-1) 30-88-84</li>
+          <li class="icq">343-888</li>
+        </ul>
+      </div>
+    </div>
+      
+    <div class="grid-5 padding-top-x2">
+      <div class="cart float-right">
+        <div class="cart-header">
+          <label class="lightblue-text uppercase-text">Корзина:</label>
+          <span class="gray-text">пуста</span>
+        </div>
+        <div class="cart-url">
+          <ul class="special-link">
+            <li><a href="/">Вход</a></li>
+            <li><a href="/">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>  
+    
+    <div class="clearfix"></div>
+  
+  </div>
+  
+  <div class="container">
+    
+    <div class="main-menu">
+      
+      <div class="grid-9"> 
+        <ul> 
+          <li><a href="/">Смартфоны</a></li> 
+          <li><a href="/">Планшеты</a></li> 
+          <li><a href="/">Доставка</a></li> 
+          <li><a href="/">Оплата</a></li> 
+          <li><a href="/">Помощь</a></li>
+          <li class="last"><a href="/">Контакты</a></li>
+        </ul>
+      </div>
+      
+      <div class="grid-3 padding-top-min">  
+        <div class="search float-right">      
+          <form action="" method="">
+            <input type="text" name="keywords" value="Поиск" size="10" maxlength="300" onblur="if(this.value=='') this.value='Поиск'" onfocus="if(this.value =='Поиск' ) this.value=''">
+            <button>Искать</button>
+          </form>                      
+        </div>
+      </div>
+      
+      <div class="clearfix"></div>
+  
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="slider margin-bottom">
+  <div class="container">
+    <div class="slides line">  
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+      <div>
+        <img src="css/img/slide1.jpg" alt="" />
+      </div>
+    </div>  
+  </div>
+</div>    
+
+<div class="breadcrumbs margin-top margin-bottom margin-left-x2">
+  <div class="container">
+    <a href="/">Skendo</a> &raquo; <span class="lightblue-text">Авторизация</span>  
+  </div>
+</div>
+
+</div>
+
+<div id="content" class="margin-bottom-x2">
+  <div class="container">
+  
+    <div class="grid-3">
+      
+      <div class="block margin-left-min margin-bottom border-dotted"> 
+        <h3 class="padding-bottom type-block uppercase-text heading">Наши товары</h3>
+        <ul class="categories padding-bottom margin-left-min">
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Смартфоны</a></li>
+          <li><a href="/">Кухонные комбайны</a></li>
+          <li><a href="/">Холодильники</a></li>
+          <li><a href="/">Запчасти для автомобилей</a></li>
+          <li><a href="/">Мягкие игрушки</a></li>
+          <li><a href="/">Продукты питания</a></li>
+          <li><a href="/">Автомобили</a></li>
+          <li><a href="/">Чай</a></li>
+        </ul>          
+      </div>
+    
+      <div class="block margin-left-min margin-bottom border-dotted">
+        <h3 class="padding-bottom type-block uppercase-text heading">Товар дня</h3>
+        <div class="product padding-bottom">
+          <div class="product-pic">
+            <img src="css/img/pic1.jpg" alt="" />  
+          </div>
+          <div class="product-info">
+            <span class="product-name">Nokia 1280 Black</span>
+            <div class="product-stars">
+              <img src="css/img/stars.jpg" alt="" width="117" height="19" />
+            </div>
+            <span class="product-price">730 руб.</span>
+            <a href="/" class="float-left product-full">Подробнее</a>
+            <a href="/" class="btn blue float-left">В корзину</a>
+            <div class="clearfix"></div>  
+          </div>
+        </div>            
+      </div>
+      
+    </div>
+    
+    <div class="grid-9">
+    
+      <div class="container-fluid">
+      
+        <h3 class="heading uppercase-text padding-bottom type-block dark-text">Добро пожаловать, пожалуйста авторизуйтесь:</h3>
+        
+        <div class="page-login">
+        
+          <div class="login float-left">
+            <div class="login-head"><b>Новый пользователь</b></div>
+            <div class="login-cont">
+              <span class="type-block padding-bottom-min">Я новый пользователь!</span>
+              <p class="gray-text">После регистрации вам будет доступно: совершение покупок в два раза быстрее, обновление статуса заказа и хранить заказы, которые вы произвели раннее.</p>          
+              <div class="padding-top">
+                <a href="/" class="btn blue float-right">регистрация</a>
+              </div>
+            </div>          
+          </div>
+
+          <div class="login float-right">
+            <div class="login-head"><b>Уже зарегистрирован</b></div>
+            <div class="login-cont">
+              <span class="type-block padding-bottom-min">Уже зарегистрирован!</span>
+              <form action="" method="POST">
+                <div class="margin-bottom-min">
+                  <label for="email" class="float-left">E-Mail:</label>
+                  <input type="text" id="email" name="email" class="float-left" />
+                  <div class="clearfix"></div>
+                </div>
+                <div class="margin-bottom-min">
+                  <label for="name" class="float-left">Пароль:</label>
+                  <input type="password" id="password" name="password" class="float-left" />
+                  <div class="clearfix"></div>
+                </div>
+                <div>
+                  <a href="/">Забыли пароль?</a>
+                </div>
+                <div>
+                  <button class="btn blue float-right" name="do" type="submit">войти</button>
+                </div>
+                <div class="clearfix"></div>                
+              </form>
+            </div>          
+          </div>
+        
+      </div>
+
+    </div>
+    
+    <div class="clearfix"></div>
+      
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container border-top padding-top-min padding-bottom-x2">
+  
+    <div class="grid-10">
+      <ul class="foot-menu">
+        <li class="active"><a href="/">Главная</a></li>
+        <li><a href="/">Смартфоны</a></li>
+        <li><a href="/">Планшеты</a></li>
+        <li><a href="/">Расширенный поиск</a></li>
+        <li><a href="/">Доставка</a></li>
+        <li><a href="/">Оплата</a></li>
+        <li><a href="/">О магазине</a></li>
+        <li><a href="/">Контактная информация</a></li>
+      </ul>
+      <div class="foot-copy">
+        &laquo;Скендо&raquo;&nbsp;&copy;&nbsp;2013&nbsp;<a href="/">Правовая информация</a>&nbsp;&nbsp;|&nbsp;<a href="/">Правила использования</a>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<p id="scroller" class="b-top" style="display: none;"><a href="#top"><span></span>Наверх</a></p>
+
+</body>
+</html>
