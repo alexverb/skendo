@@ -1,5 +1,5 @@
-http://livedemo00.template-help.com/osc_36712/reviews.php
-http://livedemo00.template-help.com/osc_36712/product_reviews_info.php?products_id=1&reviews_id=20
+http://livedemo00.template-help.com/osc_36712/reviews.php [сделано]
+http://livedemo00.template-help.com/osc_36712/product_reviews_info.php?products_id=1&reviews_id=20 [сделано]
 http://livedemo00.template-help.com/osc_36712/product_reviews_write.php?products_id=1
 http://livedemo00.template-help.com/osc_36712/product_reviews.php?products_id=1
 http://livedemo00.template-help.com/osc_36712/advanced_search.php

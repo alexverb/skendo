@@ -5,7 +5,7 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script src="js/jquery.slides.min.js"></script>
   <script src="js/jquery.bxslider.js"></script>
   <script>
@@ -58,6 +58,19 @@
           }
         }
       });
+      $(function () {
+        var tabContainers = $('.tabs #performance, .tabs #review'); // получаем массив контейнеров
+        tabContainers.hide().filter(':first').show(); // прячем все, кроме первого
+        // далее обрабатывается клик по вкладке
+        $('.tabNavigation a').click(function () {
+          tabContainers.hide(); // прячем все табы
+          tabContainers.filter(this.hash).show(); // показываем содержимое текущего
+          $('.tabNavigation a').removeClass('selected'); // у всех убираем класс 'selected'
+          $(this).addClass('selected'); // текушей вкладке добавляем класс 'selected'
+          return false;
+        }).filter(':first').click();
+      });
+ 
     });
   </script>
    
@@ -222,15 +235,7 @@
               
               <div class="clearfix"></div>
                               
-            </div>
-            
-            <div class="bookmarks margin-top">
-              <h3 class="padding-bottom type-block uppercase-text heading">MANUFACTURER INFO</h3>
-              <ul class="margin-left-min">
-                <li><a href="/">Example-1 Home Page</a></li>
-                <li><a href="/">Other products</a></li>
-              </ul>
-            </div>  
+            </div> 
           </div>
           
           <div class="prods-info-rside">
@@ -240,22 +245,30 @@
               </div>
               <div class="float-right">
                 <a href="/">следующая</a>
-              </div>
-              <div class="count">Продукт <u>6</u> из 8</div>                
-            </div>
-            <div class="date-add line padding-top padding-bottom-min">
-              Данный продукт был добавлен в наш каталог во вторник 07 мая, 2013 года.
+              </div>               
             </div>
             <div class="name-price line padding-top-min padding-bottom-min">
               <h2>Kalorik Aqua 2-Slice Toaster - Silver</h2>
               <div class="model padding-bottom-min">[Артикул: 0043]</div>
               <div class="price">
-                <span class="float-left"><b>900 руб.</b></span>
-                <span class="float-right"><s>1500 руб.</s></span>
-                <div class="clearfix"></div>
+                <span class="type-block"><b>900 руб.</b></span>
+                <span class="type-block"><s>1500 руб.</s></span>
               </div>                
             </div>
-            <div class="product-option padding-top-min padding-bottom-min line">
+            <div class="product-stars margin-bottom-min margin-top-min line">
+              <span class="float-left gray-text">Рейтинг:</span>
+              <div class="rating float-left margin-left-min margin-right-min">
+                <ul>
+                  <li><a href="#" class="star1" title="Рейтинг 1 из 5">Ужасно</a></li>
+                  <li><a href="#" class="star2" title="Рейтинг 2 из 5">Плохо</a></li>
+                  <li><a href="#" class="star3" title="Рейтинг 3 из 5">Нормально</a></li>
+                  <li class="current" style="width:88px"><a href="#" class="star4" title="Рейтинг 4 из 5">Хорошо</a></li>
+                  <li><a href="#" class="star5" title="Рейтинг 5 из 5">Отлично</a></li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="product-option padding-bottom-min line">
               <span class="type-block padding-bottom-min"><b>Возможные опции:</b></span>
               <ul>
                 <li class="float-left margin-right-min">
@@ -282,20 +295,105 @@
               <p>Fusce eu sapien eget dolor <i>sodales tempor</i> eu eget lectus. Proin consequat tellus non velit viverra a tempor nibh tincidunt. Donec elit augue, adipiscing vitae sollicitudin vitae, luctus vitae lectus. In ut tellus ut velit consectetur vulputate. Cras sagittis rutrum mauris, non iaculis turpis ullam.</p>            
             </div>
             <div class="btmurl margin-bottom padding-top-min">
-              <a href="/" class="reviews margin-right-min float-left">обзоры</a>
+              <a href="/" class="reviews margin-right-min float-left">отзывы</a>
               <a href="/" class="btn blue float-right">В корзину</a>
               <div class="clearfix"></div>               
             </div>                
           </div>
           
           <div class="clearfix"></div>
+
+          <div class="product-tabs margin-top-min">
+			      <div class="tabs">
+              <div class="tabs">
+                <!-- Это сами вкладки -->
+                  <div class="tabNavigation">
+                    <a class="" href="#performance">Характеристики</a>
+                    <a class="" href="#review">Отзывы</a>
+                    <span class="clearfix"></span>                    
+                  </div>
+                <!-- Это контейнеры содержимого -->
+                  <div class="tabs-content">   
+                    <div id="performance">
+  
+                    </div>
+                    <div id="review">
+                      <div class="list-product margin-top-min">
+                        
+                        <div class="list-product-item line">              
+                          <div class="prods-info">                
+                            <div class="prods-info-rside margin-left-min block-percent-4">
+                              <div class="date-add">
+                                  <div><b>Добавил:</b> <span class="lightblue-text">AlexVerb</span></div>
+                                  <div>Дата добавления: <span class="gray-text">Пятница 10 мая, 2013</span></div>
+                                </div>
+                                <div class="desc padding-top-min">
+                                  <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed <b>diam</b> non aliquam neque. Fusce venenatis blandit lorem eu malesuada. Maecenas bibendum, ante sed semper tincidunt, nibh ante condimentum justo, rutrum mattis nulla elit vitae massa. Sed a metus diam, porttitor varius dui. Nullam non leo ut lacus <a href="/">scelerisque</a> sollicitudin.</p>            
+                                </div>
+                                <div class="product-stars line">
+                                  <span class="float-left gray-text">Рейтинг:</span>
+                                  <div class="rating float-left margin-left-min margin-right-min">
+                                    <ul>
+                                      <li><a href="#" class="star1" title="Рейтинг 1 из 5">Ужасно</a></li>
+                                      <li><a href="#" class="star2" title="Рейтинг 2 из 5">Плохо</a></li>
+                                      <li><a href="#" class="star3" title="Рейтинг 3 из 5">Нормально</a></li>
+                                      <li class="current" style="width:88px"><a href="#" class="star4" title="Рейтинг 4 из 5">Хорошо</a></li>
+                                      <li><a href="#" class="star5" title="Рейтинг 5 из 5">Отлично</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>                 
+                              </div>                
+                              <div class="clearfix"></div>                  
+                            </div>                
+                          </div>
+
+                        <div class="list-product-item line margin-bottom-min">              
+                          <div class="prods-info">                
+                            <div class="prods-info-rside margin-left-min block-percent-4">
+                              <div class="date-add padding-top-min">
+                                  <div><b>Добавил:</b> <span class="lightblue-text">AlexVerb</span></div>
+                                  <div>Дата добавления: <span class="gray-text">Пятница 10 мая, 2013</span></div>
+                                </div>
+                                <div class="desc padding-top-min">
+                                  <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed <b>diam</b> non aliquam neque. Fusce venenatis blandit lorem eu malesuada. Maecenas bibendum, ante sed semper tincidunt, nibh ante condimentum justo, rutrum mattis nulla elit vitae massa. Sed a metus diam, porttitor varius dui. Nullam non leo ut lacus <a href="/">scelerisque</a> sollicitudin.</p>            
+                                </div>
+                                <div class="product-stars margin-bottom-min line">
+                                  <span class="float-left gray-text">Рейтинг:</span>
+                                  <div class="rating float-left margin-left-min margin-right-min">
+                                    <ul>
+                                      <li><a href="#" class="star1" title="Рейтинг 1 из 5">Ужасно</a></li>
+                                      <li><a href="#" class="star2" title="Рейтинг 2 из 5">Плохо</a></li>
+                                      <li><a href="#" class="star3" title="Рейтинг 3 из 5">Нормально</a></li>
+                                      <li class="current" style="width:88px"><a href="#" class="star4" title="Рейтинг 4 из 5">Хорошо</a></li>
+                                      <li><a href="#" class="star5" title="Рейтинг 5 из 5">Отлично</a></li>
+                                    </ul>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                </div>                 
+                              </div>                
+                              <div class="clearfix"></div>                  
+                            </div>                
+                          </div>
+                          
+                          <a href="/" class="btn gray margin-right-min float-left">вернуться</a>
+                          <a href="/" class="btn blue float-right">добавить отзыв</a>
+                          <div class="clearfix"></div>   
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+			        </div>             
+            </div>
           
           <div class="padding-top-x2">
             <span class="padding-bottom type-block uppercase-text heading">Добавить в соцсети</span>
             <!-- <script type="text/javascript" src="http://yandex.st/share/share.js" charset="utf-8"></script>
             <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,surfingbird"></div> -->
           </div>
-            
+
+          
         </div>
         
         <div class="related-prods padding-top">
@@ -348,7 +446,10 @@
               </div>
             </a>
           </div>
+          <div class="clearfix"></div>
         </div>
+
+
         
       </div>
 
@@ -381,7 +482,7 @@
   </div>
 </div>
 
-<p id="scroller" class="b-top" style="display: none;"><a href="#top"><span></span>Наверх</a></p>
+<p id="scroller" class="b-top" style="display: none;"><a href="#top"><b>&#8593;</b>Наверх</a></p>
 
 </body>
 </html>

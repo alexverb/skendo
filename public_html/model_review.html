@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
-	<title>Skendo | Связь с нами</title>
+	<title>Skendo | Отзыв о продукте</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen, projection" />
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="js/jquery.slides.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
   <script>
     $(function() {
       $('.slides').slidesjs({
@@ -44,6 +45,18 @@
       });
       $('#scroller').click(function () {
         $('body,html').animate({scrollTop: 0}, 400); return false;
+      });
+      $('.bxslider').bxSlider({
+        buildPager: function(slideIndex){
+          switch(slideIndex){
+            case 0:
+              return '<img src="css/img/pic2.jpg">';
+            case 1:
+              return '<img src="css/img/pic3.jpg">';
+            case 2:
+              return '<img src="css/img/pic2.jpg">';
+          }
+        }
       });
     });
   </script>
@@ -144,7 +157,7 @@
 
 <div class="breadcrumbs margin-top margin-bottom margin-left-x2">
   <div class="container">
-    <a href="/">Skendo</a> &raquo; <span class="lightblue-text">Связь с нами</span>  
+    <a href="/">Skendo</a> &raquo; <a href="/">Каталог</a> &raquo; <a href="/">Мобильные телефоны</a> &raquo; <a href="/">Nokia 1280 Black</a> &raquo; <span class="lightblue-text">Отзывы</span>  
   </div>
 </div>
 
@@ -178,7 +191,7 @@
             <img src="css/img/pic1.jpg" alt="" />  
           </div>
           <div class="product-info">
-            <span class="product-name">Nokia 1280 Black</span>
+            <a href="/" class="heading padding-left-none">Nokia 1280 Black</a>
             <div class="product-stars">
               <img src="css/img/stars.jpg" alt="" width="117" height="19" />
             </div>
@@ -196,32 +209,88 @@
     
       <div class="container-fluid">
       
-        <h3 class="heading uppercase-text padding-bottom type-block dark-text">Написать нам</h3>
+        <div class="prods-info">
         
-        <div class="msg error margin-bottom-min">Введен некорректный email! Проверьте пожалуйста введенную информацию ещё раз и нажмите кнопку "Отправить"!</div>
-        <div class="msg success margin-bottom-min">Мы ответим вам в течении суток!</div>
-        <div class="msg info margin-bottom-min">Ответ будет дан в течении суток, а это просто блок с информацией..</div>
+          <div class="prods-info-lside margin-right padding-right-min">
+            <div class="product-list-pic">            
+              <div class="product-pic">
+                <img src="css/img/pic1.jpg" alt="" />  
+              </div>                                            
+            </div>  
+          </div>
           
-        <form action="" method="POST" class="contact-form margin-left-min">
-          <div class="margin-bottom-min">
-            <label for="name" class="float-left">Полное имя:</label>
-            <input type="text" id="name" name="name" class="float-left error block-percent-2" value="Введено некорректное имя!" />
-            <div class="clearfix"></div>
+          <div class="prods-info-rside float-left block-percent-1">
+            <div class="name-price line padding-top-min padding-bottom-min">
+              <h2>Kalorik Aqua 2-Slice Toaster - Silver</h2>
+              <div class="model padding-bottom-min">[Артикул: 0043]</div>
+              <div class="price">
+                <span><b>900 руб.</b></span>
+                <div class="clearfix"></div>
+              </div>                
+            </div>
+            <div class="btmurl margin-bottom padding-top-min">
+              <a href="/" class="btn blue float-left">В корзину</a>
+              <div class="clearfix"></div>               
+            </div>                
           </div>
-          <div class="margin-bottom-min">
-            <label for="email" class="float-left">E-Mail:</label>
-            <input type="text" id="email" name="email" class="float-left block-percent-2" />
-            <div class="clearfix"></div>
+          
+          <div class="block-percent-1 float-right margin-top">
+          
+            <div class="bookmarks">
+              <h3 class="padding-bottom type-block uppercase-text heading">MANUFACTURER INFO</h3>
+              <ul class="margin-left-min">
+                <li><a href="/">Example-1 Home Page</a></li>
+                <li><a href="/">Other products</a></li>
+              </ul>
+            </div>
+          
+            <div class="padding-top-x2">
+              <span class="padding-bottom type-block uppercase-text heading">Добавить в соцсети</span>
+              <!-- <script type="text/javascript" src="http://yandex.st/share/share.js" charset="utf-8"></script>
+              <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj,friendfeed,moikrug,gplus,surfingbird"></div> -->
+            </div>
+                        
           </div>
-          <div class="margin-bottom-min">
-            <label for="question" class="float-left">Вопрос:</label>
-            <textarea cols="98" rows="15" name="question" id="question" class="float-left"></textarea>
-            <div class="clearfix"></div>
-          </div>
-          <button class="btn blue float-right btn-offset margin-top-min" name="do" type="submit">Отправить</button>
-        </form>
         
-      </div>
+          <div class="clearfix"></div>        
+        
+        </div>
+
+        <div class="list-product margin-top-min">
+          
+          <div class="list-product-item margin-bottom-min">              
+            <div class="prods-info">                
+              <div class="prods-info-rside margin-left-min block-percent-4">
+                <div class="date-add line padding-top-min padding-bottom-min">
+                    <div class="lightblue-text">Добавил: AlexVerb</div>
+                    <div>Дата добавления: <span class="gray-text">Пятница 10 мая, 2013</span></div>
+                  </div>
+                  <div class="desc padding-top-min margin-bottom-min line">
+                    <p>Laoreet dolore magnaorem ipsum dolor ser adipiscing elit, sed <b>diam</b> non aliquam neque. Fusce venenatis blandit lorem eu malesuada. Maecenas bibendum, ante sed semper tincidunt, nibh ante condimentum justo, rutrum mattis nulla elit vitae massa. Sed a metus diam, porttitor varius dui. Nullam non leo ut lacus <a href="/">scelerisque</a> sollicitudin.</p>            
+                  </div>
+                  <div class="product-stars margin-bottom-min">
+                    <span class="float-left gray-text">Рейтинг:</span>
+                    <div class="rating float-left margin-left-min margin-right-min">
+                      <ul>
+                        <li><a href="#" class="star1" title="Рейтинг 1 из 5">Ужасно</a></li>
+                        <li><a href="#" class="star2" title="Рейтинг 2 из 5">Плохо</a></li>
+                        <li><a href="#" class="star3" title="Рейтинг 3 из 5">Нормально</a></li>
+                        <li class="current" style="width:88px"><a href="#" class="star4" title="Рейтинг 4 из 5">Хорошо</a></li>
+                        <li><a href="#" class="star5" title="Рейтинг 5 из 5">Отлично</a></li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>                 
+                </div>                
+                <div class="clearfix"></div>                  
+              </div>                
+            </div>
+            
+            <a href="/" class="btn gray margin-right-min float-left">вернуться</a>
+            <a href="/" class="btn blue float-right">добавить отзыв</a>
+            <div class="clearfix"></div>   
+            
+          </div>      
 
     </div>
     
