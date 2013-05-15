@@ -49,6 +49,8 @@ ul{list-style: none;}
 .block-percent-2 {width: 49.5% !important;}
 .block-percent-3 {width: 78.7% !important;}
 .block-percent-4 {width: 95.5% !important;}
+.block-percent-5 {width: 28% !important;}
+.block-percent-6 {width: 70% !important;}
 
 .container{margin-right:auto; margin-left:auto; *zoom:1;}
 .container:before, .container:after{display:table; line-height:0; content:"";}
@@ -65,6 +67,7 @@ ul{list-style: none;}
   .margin-left-x2{margin-left: 50px;}
   .margin-left-min{margin-left: 15px;}
   .margin-left-none{margin-left: 0 !important;}
+  .margin-left-opposite-x2{margin-left: -50px;}
 
 .margin-right{margin-right: 25px;}
   .margin-right-x2{margin-right: 50px;}
@@ -267,9 +270,10 @@ button.btn {border: none; cursor: pointer;}
 /* Styles for form */
 form {line-height: 20px;}
   form label {width: 20%; font-weight: bold;}
+  form label .gray-text {font-weight: normal;}
   form input[type="text"], form input[type="password"], form textarea {border: 1px solid #d4d4d4; padding: 1px; color: #706c56;}  
   form input[type="text"], form input[type="password"] {line-height: 15px; width: 100%;}
-  form textarea {resize: none; padding: 4px; width: 70%;}
+  form textarea {resize: vertical; padding: 4px; width: 70%;}
   form button {border: none;}
     form button.btn-offset {margin-right: 57px;}
   .page-login .form-btm {margin-top: 10px;}
@@ -309,12 +313,26 @@ form {line-height: 20px;}
   .tabs .tabs-content .list-product-item {border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border: none;}
   
 /* Performance */
-.perform-item {}
-  .perform-item .ico {margin: 0 0 0 -50px;}
 .ico-info, .ico-size, .ico-screen, .ico-power, .ico-abook, .ico-extrainfo {background: url("img/icons.png") 0 0 no-repeat; width: 40px; height: 40px;}
-.ico-info {background-position: 0 -400px;}
-.ico-size {background-position: 0 -120px;}
-.ico-screen {background-position: 0 -440px;}
-.ico-power {background-position: 0 -80px;}
-.ico-abook {background-position: 0 -160px;}
-.ico-extrainfo {background-position: 0 -280px;}
+.ico-power     {background-position: 0 -80px;}  /* Питание */
+.ico-size      {background-position: 0 -120px;} /* Корпус */
+.ico-abook     {background-position: 0 -160px;} /* Телефонная книга и вызовы */
+.ico-extrainfo {background-position: 0 -280px;} /* Дополнительная информация */
+.ico-info      {background-position: 0 -400px;} /* Общие характеристики */
+.ico-screen    {background-position: 0 -440px;} /* Дисплей */
+
+/* Login Page */
+.login-page {}
+
+  .login-page .login-page-nav {width: 30%; margin-top: -3px;}
+    .login-page .login-page-nav ul li {line-height: 23px; margin-bottom: 5px; padding-left: 10px; position: relative;}
+      .login-page .login-page-nav ul li a {color: #787878;}
+        .login-page .login-page-nav ul li a:hover {color: #f66b0e; text-decoration: underline;}
+    .login-page .login-page-nav ul li.active {background-color: #2fc7f9;}
+      .login-page .login-page-nav ul li.active:before {position:absolute; right:-10px; width:0; height:0; border-style:solid; border-width:11px 0 12px 10px; border-color:rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0) #2fc7f9; line-height:0; -moz-border-end-style:dotted; -webkit-transform:rotate(360deg); content:"";}
+      .login-page .login-page-nav ul li.active span {color: #fff; text-decoration: none; text-shadow: 1px 1px 0px #777;}
+    
+  .login-page .login-page-content {width: 66.3%;}
+    .login-page .login-page-content p, .login-page .login-page-content a {font-size: 14px;} 
+      .login-page .login-page-content p span {line-height: 20px;}
+  
