@@ -307,3 +307,14 @@ form {line-height: 20px;}
   .tabNavigation a.selected {border: 1px solid #ddd; border-bottom-width: 0; padding: 7px 14px; color: #000;} 
   .tabNavigation a:hover {background-color: #eeeeee; color: #000;}
   .tabs .tabs-content .list-product-item {border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; -khtml-border-radius: 0px; border: none;}
+  
+/* Performance */
+.perform-item {}
+  .perform-item .ico {margin: 0 0 0 -50px;}
+.ico-info, .ico-size, .ico-screen, .ico-power, .ico-abook, .ico-extrainfo {background: url("img/icons.png") 0 0 no-repeat; width: 40px; height: 40px;}
+.ico-info {background-position: 0 -400px;}
+.ico-size {background-position: 0 -120px;}
+.ico-screen {background-position: 0 -440px;}
+.ico-power {background-position: 0 -80px;}
+.ico-abook {background-position: 0 -160px;}
+.ico-extrainfo {background-position: 0 -280px;}
