@@ -328,8 +328,8 @@ form {line-height: 20px;}
     .login-page .login-page-nav ul li {line-height: 23px; margin-bottom: 5px; padding-left: 10px; position: relative;}
       .login-page .login-page-nav ul li a {color: #787878;}
         .login-page .login-page-nav ul li a:hover {color: #f66b0e; text-decoration: underline;}
-    .login-page .login-page-nav ul li.active {background-color: #2fc7f9;}
-      .login-page .login-page-nav ul li.active:before {position:absolute; right:-10px; width:0; height:0; border-style:solid; border-width:11px 0 12px 10px; border-color:rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0) #2fc7f9; line-height:0; -moz-border-end-style:dotted; -webkit-transform:rotate(360deg); content:"";}
+    .login-page .login-page-nav ul li.active {background-color: #0a92d2;}
+      .login-page .login-page-nav ul li.active:before {position:absolute; right:-10px; width:0; height:0; border-style:solid; border-width:11px 0 12px 10px; border-color:rgba(255,255,255,0) rgba(255,255,255,0) rgba(255,255,255,0) #0a92d2; line-height:0; -moz-border-end-style:dotted; -webkit-transform:rotate(360deg); content:"";}
       .login-page .login-page-nav ul li.active span {color: #fff; text-decoration: none; text-shadow: 1px 1px 0px #777;}
     
   .login-page .login-page-content {width: 66.3%;}
