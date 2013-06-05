@@ -339,7 +339,7 @@ form {line-height: 20px;}
 /* Slider */
 .slides {}
   .slides div {position: relative;}
-    .slides div .slides-content {position: absolute; top: 80px; left: 50px;}
+    .slides div .slides-content.pos-abs {position: absolute; top: 80px; left: 50px;}
     .slides div .slides-content h3 {font-size: 30px; color: #545454; font-weight: 100;}
     .slides div .slides-content span {font-size: 40px; color: #4b4b4b;}
     .slides div .slides-content p {font-size: 19px; color: #4b4b4b;}
