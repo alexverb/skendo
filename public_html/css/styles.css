@@ -335,3 +335,12 @@ form {line-height: 20px;}
   .login-page .login-page-content {width: 66.3%;}
     .login-page .login-page-content p, .login-page .login-page-content a {font-size: 14px;} 
       .login-page .login-page-content p span {line-height: 20px;}
+      
+/* Slider */
+.slides {}
+  .slides div {position: relative;}
+    .slides div .slides-content {position: absolute; top: 80px; left: 50px;}
+    .slides div .slides-content h3 {font-size: 30px; color: #545454; font-weight: 100;}
+    .slides div .slides-content span {font-size: 40px; color: #4b4b4b;}
+    .slides div .slides-content p {font-size: 19px; color: #4b4b4b;}
+    .slides div .slides-content .btn {font-size: 27px; display: inline-block; text-shadow: 1px 1px 1px #1e779e; font-weight: 400;}
