@@ -165,9 +165,11 @@ button.btn {border: none; cursor: pointer;}
 
 /* Categories of goods */
 .categories {line-height: 22px;}
-  .categories li {position: relative; list-style: inside disc; color: #b9b5b5;}
+  .categories li {position: relative; list-style: inside disc; color: #b9b5b5; line-height: 16px;}
     .categories li:hover {color: #575656;}
     .categories li a {color: #787878;}
+    .categories li ul {display: none;}
+      .categories li ul li ul {display: none;}
   
 /* Product */
 .product {}
